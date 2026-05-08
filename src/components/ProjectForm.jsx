@@ -31,7 +31,7 @@ const ProjectForm = ({ onAddProject }) => {
         onChange={(e) => setProjectDescription(e.target.value)}
         required
       />
-      <button type="submit">Add Project</button>
+      <p><button type="submit">Add Project</button></p>
     </form>
   );
 };
