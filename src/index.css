@@ -70,3 +70,13 @@ body {
   text-align: center;
   border-radius: 0 0 16px 16px;
 }
+@media (max-width: 768px) {
+  .project-form, .project-items {
+   max-width: 90%;
+   padding: 15px;
+  }
+  .header {
+    padding: 15px;
+    font-size: 18px;
+  }
+} 
