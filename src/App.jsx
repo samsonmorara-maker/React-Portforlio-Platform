@@ -32,7 +32,6 @@ function App() {
     <>
     
     <Header />
-    <hr />
     <ProjectForm onAddProject={addProject} />
     <ProjectList projects={projects} />
             
