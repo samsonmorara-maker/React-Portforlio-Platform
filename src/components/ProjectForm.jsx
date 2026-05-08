@@ -15,6 +15,8 @@ const ProjectForm = ({ onAddProject }) => {
 
   return (
     <form onSubmit={handleSubmit} className="project-form">
+        <h2>Add Project</h2>
+        <p>Title</p>
       <input
         type="text"
         placeholder="Project Name"
@@ -22,7 +24,7 @@ const ProjectForm = ({ onAddProject }) => {
         onChange={(e) => setProjectName(e.target.value)}
         required
       />
-
+<p>Description</p>
       <textarea
         placeholder="Project Description"
         value={projectDescription}

@@ -1,10 +1,9 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+import React from 'react';
 import './App.css'
 import ProjectForm from './components/ProjectForm'
 import ProjectList from './components/ProjectList'
+import Header from './components/Header'
 
 function App() {
   const [projects, setProjects] = useState([
@@ -26,9 +25,14 @@ function App() {
 
    function addProject(project) {
     setProjects([...projects, { id: projects.length + 1, ...project }]);
+    console.log('Project added:', project);
+    alert('Project added successfully!');
   }
   return (
     <>
+    
+    <Header />
+    <hr />
     <ProjectForm onAddProject={addProject} />
     <ProjectList projects={projects} />
             
