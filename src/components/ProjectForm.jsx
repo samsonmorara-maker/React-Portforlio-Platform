@@ -27,6 +27,7 @@ const ProjectForm = ({ onAddProject }) => {
         placeholder="Project Description"
         value={projectDescription}
         onChange={(e) => setProjectDescription(e.target.value)}
+        required
       />
       <button type="submit">Add Project</button>
     </form>
